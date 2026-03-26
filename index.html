@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiago de Mattos — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Fundo de partículas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav id="navbar">
+      <a class="nav-brand" href="#">
+        <span class="brand-bracket">&lt;</span>THMattos<span class="brand-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a href="#skills">Skills</a></li>
+        <li class="nav-item"><a href="#posts">Blog</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-cta">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="sobre">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-tag">
+            <span class="tag-dot"></span> Disponível para estágio
+          </p>
+          <h1 class="hero-title">
+            Olá, eu sou<br />
+            <span class="hero-name">Thiago<br />de Mattos</span>
+          </h1>
+          <p class="hero-subtitle">
+            Estudante de <strong>Ciência da Computação</strong> no 2º período, apaixonado 
+            por tecnologia e desenvolvimento web. Aprendendo HTML, CSS e JavaScript 
+            na <em>OneBitCode</em> e <em>Ada Tech</em>.
+          </p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Entre em contato</a>
+            <a href="#posts" class="btn btn-ghost">Ver posts →</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">2º</span>
+              <span class="stat-label">Período CC</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Tecnologias</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Curiosidade</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-frame">
+            <div class="avatar-glow"></div>
+            <img
+              src="https://avatars.githubusercontent.com/u/115823455?v=4"
+              alt="Thiago de Mattos"
+              class="hero-avatar"
+            />
+            <div class="avatar-badge">
+              <span class="badge-dot"></span> Online
+            </div>
+          </div>
+          <div class="code-float code-float-1">
+            <span class="cf-lang">HTML</span>
+            <code>&lt;dev&gt; criando &lt;/dev&gt;</code>
+          </div>
+          <div class="code-float code-float-2">
+            <span class="cf-lang">CSS</span>
+            <code>style: incrível;</code>
+          </div>
+          <div class="code-float code-float-3">
+            <span class="cf-lang">JS</span>
+            <code>console.log("🚀")</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-header">
+        <span class="section-tag">// skills</span>
+        <h2 class="section-title">O que estou aprendendo</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML5</h3>
+          <p>Estruturação semântica de páginas, tags, atributos e acessibilidade.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 75%"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS3</h3>
+          <p>Estilização, Flexbox, Grid, animações e design responsivo.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 65%"></div></div>
+          <span class="skill-pct">65%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Lógica de programação, DOM e interatividade nas páginas.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 45%"></div></div>
+          <span class="skill-pct">45%</span>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐙</div>
+          <h3>Git & GitHub</h3>
+          <p>Versionamento de código, repositórios e colaboração.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 55%"></div></div>
+          <span class="skill-pct">55%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTS -->
+    <section id="posts">
+      <div class="section-header">
+        <span class="section-tag">// blog</span>
+        <h2 class="section-title">Posts recentes</h2>
+        <a class="view-all-link" href="#">Ver todos →</a>
+      </div>
+      <div class="posts-grid">
+
+        <article class="post-card">
+          <div class="post-meta">
+            <span class="post-tag tag-html">HTML</span>
+            <span class="post-date">04 Out 2023</span>
+          </div>
+          <h3 class="post-title">O que é HTML?</h3>
+          <p class="post-excerpt">
+            HTML é a linguagem de marcação que estrutura toda a web. Com ela, definimos 
+            o conteúdo e a hierarquia dos elementos — títulos, parágrafos, imagens e links.
+          </p>
+          <div class="post-footer">
+            <span class="post-read">5 min de leitura</span>
+            <a href="#" class="post-link">Ler mais →</a>
+          </div>
+        </article>
+
+        <article class="post-card post-featured">
+          <div class="post-meta">
+            <span class="post-tag tag-css">CSS</span>
+            <span class="post-date">04 Out 2023</span>
+          </div>
+          <h3 class="post-title">O que é CSS?</h3>
+          <p class="post-excerpt">
+            CSS (Cascading Style Sheets) dá vida visual às páginas HTML. Define cores, 
+            fontes, espaçamentos e layouts — separando conteúdo da apresentação.
+          </p>
+          <div class="post-footer">
+            <span class="post-read">4 min de leitura</span>
+            <a href="#" class="post-link">Ler mais →</a>
+          </div>
+        </article>
+
+        <article class="post-card post-soon">
+          <div class="post-meta">
+            <span class="post-tag tag-js">JavaScript</span>
+            <span class="post-date">Em breve</span>
+          </div>
+          <h3 class="post-title">Introdução ao JavaScript</h3>
+          <p class="post-excerpt">
+            JavaScript adiciona interatividade e lógica às páginas web. 
+            Em breve, um post completo sobre essa linguagem essencial.
+          </p>
+          <div class="post-footer">
+            <span class="post-read">— min</span>
+            <span class="post-coming-badge">Em breve</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="contact-box">
+        <span class="section-tag">// contato</span>
+        <h2 class="contact-title">Vamos conversar?</h2>
+        <p class="contact-desc">
+          Estou em busca de oportunidades de estágio na área de TI. 
+          Fique à vontade para entrar em contato!
+        </p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/thiagodemattos-/" target="_blank" rel="noopener" class="contact-btn">
+            <span class="cb-icon">in</span> LinkedIn
+          </a>
+          <a href="https://github.com/THMattos" target="_blank" rel="noopener" class="contact-btn">
+            <span class="cb-icon">gh</span> GitHub
+          </a>
+          <a href="https://www.instagram.com/thmattosrj/" target="_blank" rel="noopener" class="contact-btn">
+            <span class="cb-icon">ig</span> Instagram
+          </a>
+          <a href="mailto:thiagodemattos25@gmail.com" class="contact-btn contact-btn-highlight">
+            <span class="cb-icon">@</span> Enviar e-mail
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-brand">&lt;THMattos /&gt;</span>
+      <span class="footer-copy">Feito com ❤ por Thiago de Mattos · 2024</span>
+      <a href="#sobre" class="footer-top">↑ Topo</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
